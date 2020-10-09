@@ -17,7 +17,7 @@ int main() {
 	char chaine[TAILLEMAX];
 	
 	printf("Chaine : ");
-	scanf_s("%s", chaine, sizeof(chaine));
+	scanf_s("%s", chaine, (unsigned)_countof(chaine));
 	//if (sizeof(chaine) > TAILLEMAX) { printf("String trop grand");}
 	//else { 
 	compterCar(chaine, TAILLEMAX);
